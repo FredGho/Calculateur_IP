@@ -1,0 +1,116 @@
+<!-- page testé par Nicola Mascolo sur les navigateurs Firefox Developer Edition 58.0b11 (64 bits) et sur Opera 49.0.2725.64 -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/style/calculator_style.css"> <!-- importe le style css sur la page html -->
+    <link rel="stylesheet" href="../assets/fonts/Stellar/Stellar-Regular.woff"> <!-- importe la police d'écriture Stellar-Regular.woff sur la page html -->
+
+    <title>Calculateur d'adresse IP</title>
+</head>
+<body>
+    <header>
+      <h1 id="titre-id">A2F</h1> <!-- nom du site web -->
+    </header>
+
+        <nav class="navigation">    <!-- liste de navigation du menu -->
+            <ul>
+              <li class="accueil"><a href="index.html" title="Home">Accueil</a></li>
+              <li class="calculateur"><a href="ip_calculator.html" title="Calculateur">Calculateur</a></li> 
+            </ul>
+        </nav>
+
+    <section id="content-id">
+        <table>
+            <div id="formulaire-id" class="rounded text-center">
+                <form name="calculator-form" action ="URL" method="post"> <!-- formulaire à remplir (avec une adresse ip et un CIDR) -->
+                    <div>
+                        <label id="form-id" for="form-id"><p>Adresse IP</p></label>
+                         <!-- inputs de l'adresse IP (divisé en 4 input pour 4 octets)-->
+                        <input id="Ane_de_Florent_Ip1" class="input-bit" name="premier-bit">.
+                        <input id="Ane_de_Florent_Ip2" class="input-bit" name="deuxieme-bit">.
+                        <input id="Ane_de_Florent_Ip3" class="input-bit" name="troisieme-bit">.
+                        <input id="Ane_de_Florent_Ip4" class="input-bit" name="quatrieme-bit">
+                        <!-- input pour rentrer le CIDR -->
+                        <label id="cidr-id" for="cidr-id">CIDR /</label>
+                        <input id="Ane_de_Florent_CIDR" class="input-bit" name="cidr"> 
+                    </div>
+
+                    <video autoplay muted loop id="background"> <!--Prend toute la balise video pour le background, et c'est tout -->
+                      <source src="../assets/vid/mapgris.mp4" type="video/mp4">
+                    </video>
+
+                    <div id="btncalc-id">
+                        <button type="button" href="#" role="button" onclick="hiddenResult(); calculateur(); hideButton(); hideError()">Calculer</button>
+                    </div>
+                </form>
+
+            </div>
+        </table>
+
+        <div id="error">
+                <p id="errormsg"><output id="Ane_de_Florent_erreur"></p>
+        </div>
+
+        <div id="resultat-id">
+
+            <div>
+                <h2 id="resultat-titre"><strong><u>Résultats</u></strong></h2>
+            </div>
+
+
+            <div id="resultat">
+              <div>
+                <p>Identifiant réseau : <output id="Identifiant_reseau"></output></p>
+              </div>
+
+              <div>
+                <p>Masque sous-réseau : <output id="Masque_de_sous_reseau"></output></p>
+              </div>
+
+              <div>
+                <p>Adresse de Broadcast : <output id="Adresse_de_Broadcast"></output></p>
+              </div>
+
+              <div>
+                <p>Première adresse attribuable à un hôte : <output id="Premiere_adresse_attribuable"></output></p>
+              </div>
+
+              <div>
+                <p>Dernière adresse attribuable à un hôte : <output id="Derniere_adresse_attribuable"></output></p>
+              </div>
+
+              <div>
+                <p>Total des adresses ip attribuables aux hôtes : <output id="Total_adresse_attribuable"></output></p>
+              </div>
+
+              <div>
+                <p>Identification de la classe : <output id="Identification_de_la_classe"></output></p>
+              </div>
+
+              <div id="btnretry-id">
+                  <button type="button" href=# onclick="reloadResult(); goTop()">Recommencer</button>
+              </div>
+
+          </div>
+    </section>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+<footer>
+    <script src="../assets/js/calculator_script.js"></script>
+    <script src="../assets/js/calcul.js"></script>
+
+</footer>
+
+</body>
+</html>

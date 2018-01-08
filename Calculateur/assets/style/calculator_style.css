@@ -1,0 +1,181 @@
+/* style CSS testé par Nicola Mascolo sur Firefox Developer Edition 58.0b11 (64 bits) */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Stellar", sans-serif;
+  Line-Height: 1.8;
+}
+
+@font-face {
+  font-family: "Stellar";
+  src: url("../fonts/Stellar/Stellar-Regular.woff");
+}
+
+#titre-id{
+  color: #FF0000;
+  text-shadow: 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000;
+  font-size: 200%;
+  margin: 25px 0px 50px 50px;
+}
+
+.navigation{
+  display: inline;
+  position: relative;
+}
+
+a{
+  color: #FF0000;
+}
+
+.accueil{
+  float: left;
+  padding-left: 40%;
+  text-shadow: 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+a:hover{
+  color: #FF0000;
+  text-shadow: 0px 0px 6px #987070, 0px 0px 6px #987070, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000;
+}
+
+
+.calculateur{
+  color: #FF0000;
+  float: right;
+  padding-right: 40%;
+  text-shadow: 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000;
+}
+
+.navigation ul li {
+  list-style-type: none;
+  display:inline;
+}
+
+#help-id{
+    padding-right: 15px;
+    position: absolute;
+    height: 15px;
+    width: auto;
+}
+
+#content-id {
+    color: white;
+    padding: 40px;
+    margin: 10% 25%;
+}
+
+
+#formulaire-id {
+    background-color: rgba(0,0,0,0.70);
+    display: block;
+    padding: 20px 20px 50px 20px;
+}
+
+#formulaire-id p {
+  display: inline;  
+}
+
+#form-id {
+    font-size: 20px;
+    padding-right: 15px;
+}
+
+#cidr-id{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#formulaire-id .input-bit {
+    width: 40px;
+    height: 25px;
+}
+
+#btncalc-id {
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+#btncalc-id button {
+  padding:6px 0 6px 0;
+  background-color: rgba(255,0,0,0.70);
+  color:#FFFFFF;
+  width:90px;
+  border-radius:2px;
+  border:none;
+  margin-left: 75%;
+  font-size: 15px;
+}
+
+#error {
+  color: #D8000C;
+  background-color: #FFBABA;
+  border: 1px solid;
+  margin: 10px 0px;
+  padding: 15px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+#errorimg {
+  height: 31px;
+  width: 31px;
+  float: left;
+  margin: 15px;
+}
+
+#resultat-id {
+    border: 1px solid black;
+    background-color: rgba(0,0,0,0.70);
+    padding: 20px;
+    padding-left: 40px;
+}
+
+#resultat-titre {
+    padding-bottom: 35px;
+}
+
+#background { /*c'est le background*/
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}
+
+#resultat{
+  display: inline;
+}
+
+#resultat p {
+  padding-bottom: 40px;
+}
+
+#resultat output {
+  padding-left: 10px;
+}
+
+#btnretry-id {
+  margin-left: 515px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+#btnretry-id button {
+  padding:6px 6px 6px 6px;
+  background-color: rgba(255,0,0,0.70);
+  color:#FFFFFF;
+  width:100px;
+  border-radius:2px;
+  border:none;
+  font-size: 15px;
+}
